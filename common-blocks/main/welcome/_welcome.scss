@@ -1,0 +1,111 @@
+.welcome {
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  background: url("images/welcome__bg.webp");
+  background-color: rgba(0, 0, 0, 0);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  align-items: center;
+  &__col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+  }
+  &__container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__link {
+    display: inline-flex;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    background: #4e9525;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    align-items: center;
+  }
+  &__subtitle {
+    font-size: 15px;
+    color: #fbd341;
+    text-transform: uppercase;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 800;
+  }
+  &__text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  &__title {
+    margin: 0.5rem 0;
+    font-size: 60px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .welcome {
+    &__container {
+      max-width: 720px;
+    }
+
+  }
+}
+@media screen and (min-width: 992px) {
+  .welcome {
+    &__container {
+      max-width: 960px;
+    }
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .welcome {
+      min-height: 350px;
+    &__container {
+      max-width: 540px;
+    }
+    &__row {
+      justify-content: center;
+    }
+    &__col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    &__title {
+      font-size: 40px;
+    }
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .welcome {
+    &__title {
+      font-size: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .welcome {
+    &__container {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+}
