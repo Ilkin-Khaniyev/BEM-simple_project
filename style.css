@@ -1,8 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 .page {
   margin: 0;
   padding: 0;
@@ -480,5 +475,259 @@
     width: 100%;
     padding: 0 15px;
   }
+}
+
+.lawn-services {
+  padding: 3rem 0;
+}
+
+.lawn-services__col-3 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.lawn-services__col-9 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.lawn-services__container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.lawn-services__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.service-content__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 1rem 1.5rem;
+  background-color: #4e9525;
+  text-decoration: none;
+  color: #fff;
+}
+
+.service-content__subtitle {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #4e9525;
+}
+
+.service-content__text {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+.service-content__title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.services__col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33.3%;
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.services__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.services-item {
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+  text-align: center;
+  -webkit-box-shadow: 0 10px 30px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px -4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.services-item__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.services-item__link {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #4e9525;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.services-item__link i {
+  font-size: 10px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.services-item__icon {
+  color: #4e9525;
+  font-size: 40px;
+}
+
+.services-item__text {
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+.services-item__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.services-item-hover:hover .services-item__header {
+  background: #4e9525;
+}
+
+.services-item-hover:hover .services-item__icon {
+  color: #fbd341;
+}
+
+.services-item-hover:hover .services-item__link {
+  opacity: 1;
+  bottom: -25px;
+}
+
+@media screen and (min-width: 768px) {
+  .lawn-services__container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .lawn-services__container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .lawn-services__container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .lawn-services {
+    min-height: 350px;
+  }
+  .lawn-services__container {
+    max-width: 540px;
+  }
+  .lawn-services__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .lawn-services__col-3 {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .services__col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .services-item {
+    margin-bottom: 30px;
+  }
+  .service-content {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .lawn-services__col-3, .lawn-services__col-9 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.8;
 }
 /*# sourceMappingURL=style.css.map */
